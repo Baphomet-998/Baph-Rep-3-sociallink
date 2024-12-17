@@ -1,0 +1,97 @@
+/* /// GENERAL SETTINGS */
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt/,wght.ttf);
+}
+
+:root{
+    --Pfl-font: Inter, sans-serif;
+
+    --Green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --mediumgrey: hsl(0, 0%, 20%);
+    --HeavyGrey: hsl(0, 0%, 12%);
+    --HeavyDark: hsl(0, 0%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: var(--Pfl-font);
+    color: var(--white);
+}
+
+/* /// BODY STYLE */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--HeavyDark);
+    min-height: 100vh;
+}
+
+/* // PROFILE CARD CONTAINER (MAIN) */
+
+main{
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--HeavyGrey);
+    border-radius: 10px;
+    width: 320px;
+    padding: 1.5rem;
+    font-weight: 500;
+}
+
+main img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+main h1{
+    font-size: 1.5em;
+    opacity: 0.9;
+    margin-top: 1.5rem;
+}
+/* // STYLING SPANS */ 
+
+.location{
+    color: var(--Green);
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.description{
+    color: var(--white);
+    font-size: 1em;
+    opacity: 0.6;
+    margin: 1.5rem 0  0.2rem 0;
+}
+
+/* // STYLING SOCIAL LINKS */
+
+.socialLink{
+    border-radius: 10px;
+    background-color: var(--mediumgrey);
+    width: 100%;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1.1rem;
+    padding: 13px 40px;
+    opacity: 0.8;
+}
+
+.socialLink:active{
+    background-color: var(--Green);
+    color: var(--HeavyDark);
+}
+footer{
+    display: none;
+}
